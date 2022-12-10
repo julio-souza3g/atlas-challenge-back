@@ -5,6 +5,13 @@
     "esModuleInterop": true,  
     "allowJs": true,
     "skipLibCheck": true,
-    "outDir": "./dist",                             
+    "outDir": "./dist",  
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,  
+    "paths": {
+      "@services/*": ["./services"],
+    }                             
   }
 }
