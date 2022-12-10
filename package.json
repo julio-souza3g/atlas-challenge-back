@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec sucrase-node src/server.ts",
+    "build": "sucrase src -d dist --transforms typescript,imports",
+    "start": "node dist/server.js",
     "test": "jest"
   },
   "devDependencies": {
