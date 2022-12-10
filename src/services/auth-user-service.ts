@@ -1,3 +1,5 @@
+import 'dotenv/config';
+import jwt from "jsonwebtoken";
 import User from "../schemas/User";
 
 export class AuthUserService {
@@ -6,6 +8,7 @@ export class AuthUserService {
     if (!user) {
       throw new Error("Invalid credentials");
     }
-    return user;
+    const token = jwt.sign({ email }, process.env.JWT_SECRET, {});
+    return token;
   }
 }
