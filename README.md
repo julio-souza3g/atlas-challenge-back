@@ -6,6 +6,7 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
 </p>
 
 <br>
@@ -32,6 +33,14 @@ Projeto desenvolvido para o processo seletivo da AtlasGR. A API consiste em um s
 - Inicie o servidor com `npm run dev ou yarn dev`
 
 Agora você pode acessar [`localhost:4000/docs`](http://localhost:4000/docs) do seu navegador para ter acesso a documentação da API.
+
+## 🚀 Deploy
+
+- Deploy realizado no ambiente da [Railway](https://railway.app/).
+
+Você também pode acessar esta API através [desse link](https://atlas-challenge-back-production.up.railway.app/)
+
+E para acessar a documentação acesse através [desse link](https://atlas-challenge-back-production.up.railway.app/docs/)
 
 ---
 
