@@ -5,11 +5,8 @@
     "esModuleInterop": true,  
     "allowJs": true,
     "skipLibCheck": true,
-    "outDir": "./dist",  
+    "outDir": "./dist", 
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,  
-    "paths": {
-      "@services/*": ["./services"],
-    }                             
+    "emitDecoratorMetadata": true,                       
   }
 }
