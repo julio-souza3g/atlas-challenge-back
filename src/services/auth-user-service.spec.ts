@@ -26,10 +26,7 @@ describe("AuthUserService", () => {
   });
 
   it("should be able to find a user if exists", async () => {
-    const user = new User({
-      email: "any@email.com",
-      password: "any_password",
-    });
+    const user = new User(makeFakeAuthData());
     await user.save();
     const userExists = await User.findOne(makeFakeAuthData());
     expect(userExists).toBeTruthy();
@@ -44,5 +41,13 @@ describe("AuthUserService", () => {
     const { sut } = makeSut();
     const promise = sut.execute(makeFakeAuthData().email, makeFakeAuthData().password);
     await expect(promise).rejects.toThrowError('Invalid credentials');
-  })
+  });
+
+  it('should return a token if user exists', async () => {
+    const { sut } = makeSut();
+    const user = new User(makeFakeAuthData());
+    await user.save();
+    const token = await sut.execute(makeFakeAuthData().email, makeFakeAuthData().password);
+    expect(token).toBeTruthy();
+  });
 });
